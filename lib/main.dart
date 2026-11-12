@@ -9,7 +9,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   LicenseRegistry.addLicense(() async* {
     yield const LicenseEntryWithLineBreaks(<String>['iris_classifier'], '''
-Botanical photographs used by Iris Classifier
+Botanical photographs used by J’Iris
 
 Iris setosa 2.jpg — Tiia Monto, Wikimedia Commons
 https://commons.wikimedia.org/wiki/File:Iris_setosa_2.jpg

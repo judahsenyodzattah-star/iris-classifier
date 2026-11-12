@@ -24,6 +24,6 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    expect(find.text('A closer look at Iris'), findsOneWidget);
+    expect(find.text('Welcome to J’Iris'), findsOneWidget);
   });
 }

@@ -1,11 +1,11 @@
 {
-    "name": "iris_classifier",
-    "short_name": "iris_classifier",
+    "name": "J’Iris",
+    "short_name": "J’Iris",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A field guide and model-ready measurement tool for discovering the Iris family.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -33,7 +33,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
               child: Column(mainAxisSize: MainAxisSize.min, children: [
         const IrisArt(size: 112),
         const SizedBox(height: 20),
-        Text('Iris Classifier',
+        Text('J’Iris',
             style: Theme.of(context)
                 .textTheme
                 .headlineSmall
@@ -53,7 +53,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   final _controller = PageController();
   int _page = 0;
   final _titles = [
-    'A closer look at Iris',
+    'Welcome to J’Iris',
     'Four simple measurements',
     'Meet the species'
   ];
@@ -87,14 +87,16 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   controller: _controller,
                   onPageChanged: (i) => setState(() => _page = i),
                   itemCount: 3,
-                  itemBuilder: (context, i) => Column(
+                  itemBuilder: (context, i) => LayoutBuilder(
+                      builder: (context, constraints) {
+                        final artSize = (constraints.maxHeight * 0.42)
+                            .clamp(160.0, 270.0)
+                            .toDouble();
+                        return Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             IrisArt(
-                                size: MediaQuery.sizeOf(context)
-                                    .width
-                                    .clamp(180.0, 270.0)
-                                    .toDouble(),
+                                size: artSize,
                                 variant: i),
                             const SizedBox(height: 36),
                             Text(_titles[i],
@@ -117,7 +119,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                                             color: Theme.of(context)
                                                 .colorScheme
                                                 .onSurfaceVariant))),
-                          ]))),
+                          ]);
+                      }))),
           Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(
@@ -183,7 +186,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-            title: const Text('Iris Classifier',
+            title: const Text('J’Iris',
                 style: TextStyle(fontWeight: FontWeight.w800)),
             actions: [
               IconButton(
@@ -1202,12 +1205,12 @@ class SettingsScreen extends ConsumerWidget {
                   child: Column(children: [
                 ListTile(
                     leading: const Icon(Icons.info_outline),
-                    title: const Text('About Iris Classifier'),
+                    title: const Text('About J’Iris'),
                     subtitle: const Text(
                         'A field guide and model-ready measurement tool'),
                     onTap: () => showAboutDialog(
                         context: context,
-                        applicationName: 'Iris Classifier',
+                        applicationName: 'J’Iris',
                         applicationVersion: '1.0.0',
                         applicationLegalese:
                             'Educational companion. No classification model is bundled.')),
@@ -1222,7 +1225,7 @@ class SettingsScreen extends ConsumerWidget {
                         builder: (context) => AlertDialog(
                                 title: const Text('Privacy information'),
                                 content: const Text(
-                                    'Iris Classifier stores onboarding status, theme preference, and any saved result records locally using device preferences. This version has no account, analytics, or connected prediction endpoint. When you configure a remote prediction service, measurements will be sent to the base URL you provide; review that service’s privacy terms.'),
+                                    'J’Iris stores onboarding status, theme preference, and any saved result records locally using device preferences. This version has no account, analytics, or connected prediction endpoint. When you configure a remote prediction service, measurements will be sent to the base URL you provide; review that service’s privacy terms.'),
                                 actions: [
                                   TextButton(
                                       onPressed: () => Navigator.pop(context),
@@ -1234,7 +1237,7 @@ class SettingsScreen extends ConsumerWidget {
                     title: const Text('Licenses & acknowledgements'),
                     onTap: () => showLicensePage(
                         context: context,
-                        applicationName: 'Iris Classifier',
+                        applicationName: 'J’Iris',
                         applicationVersion: '1.0.0'))
               ])),
               const SizedBox(height: 16),

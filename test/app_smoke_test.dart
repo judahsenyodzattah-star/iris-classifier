@@ -11,7 +11,7 @@ void main() {
     final prefs = await SharedPreferences.getInstance();
     await tester.pumpWidget(ProviderScope(overrides: [sharedPreferencesProvider.overrideWithValue(prefs)], child: const IrisClassifierApp()));
     await tester.pumpAndSettle();
-    expect(find.text('A closer look at Iris'), findsOneWidget);
+    expect(find.text('Welcome to J’Iris'), findsOneWidget);
     await tester.tap(find.text('Next'));
     await tester.pumpAndSettle();
     expect(find.text('Four simple measurements'), findsOneWidget);

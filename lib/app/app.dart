@@ -7,7 +7,7 @@ import '../core/providers.dart';
 class IrisClassifierApp extends ConsumerWidget {
   const IrisClassifierApp({super.key});
   @override Widget build(BuildContext context, WidgetRef ref) => MaterialApp.router(
-    title: 'Iris Classifier', debugShowCheckedModeBanner: false,
+    title: 'J’Iris', debugShowCheckedModeBanner: false,
     theme: AppTheme.light(), darkTheme: AppTheme.dark(), themeMode: ref.watch(themeModeProvider),
     routerConfig: appRouter,
   );

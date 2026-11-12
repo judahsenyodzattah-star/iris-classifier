@@ -1,4 +1,4 @@
-# Iris Classifier
+# J’Iris
 
 A cross-platform Flutter application for entering Iris measurements, learning about three Iris species, and saving real classification results. **No classifier or sample predictions are bundled.** Until a real model is connected, submit displays an explicit “Prediction service not connected” result with the entered measurements.
 

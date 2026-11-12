@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="J’Iris app icon">
+  <defs>
+    <linearGradient id="background" x1="96" y1="64" x2="928" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8E6BFF"/>
+      <stop offset="0.48" stop-color="#6844C6"/>
+      <stop offset="1" stop-color="#3B227F"/>
+    </linearGradient>
+    <radialGradient id="petal" cx="50%" cy="24%" r="82%">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.72" stop-color="#F5F0FF"/>
+      <stop offset="1" stop-color="#DCD0FF"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#20104D" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#background)"/>
+  <path d="M82 304C183 153 340 76 512 76s329 77 430 228c-116-60-267-95-430-95S198 244 82 304Z" fill="#FFFFFF" opacity="0.08"/>
+  <g filter="url(#shadow)" fill="url(#petal)" stroke="#FFFFFF" stroke-width="9" stroke-linejoin="round">
+    <path d="M512 482C435 378 424 247 512 136c88 111 77 242 0 346Z"/>
+    <path d="M527 492c47-122 147-207 291-210-18 143-113 237-291 210Z"/>
+    <path d="M522 519c139-28 259 20 324 145-142 52-260 4-324-145Z"/>
+    <path d="M497 519c-139-28-259 20-324 145 142 52 260 4 324-145Z"/>
+    <path d="M497 492c-47-122-147-207-291-210 18 143 113 237 291 210Z"/>
+  </g>
+  <path d="M512 418c34 0 62 29 62 65 0 64-36 111-62 139-26-28-62-75-62-139 0-36 28-65 62-65Z" fill="#6D46D2"/>
+  <circle cx="512" cy="483" r="28" fill="#FFFFFF"/>
+  <path d="M512 533c-22 69-17 122 0 173 17-51 22-104 0-173Z" fill="#8E6BFF" opacity="0.86"/>
+</svg>
