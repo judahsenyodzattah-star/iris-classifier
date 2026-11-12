@@ -1,0 +1,42 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Platform build output
+android/.gradle/
+android/local.properties
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Flutter project metadata
+!.metadata
